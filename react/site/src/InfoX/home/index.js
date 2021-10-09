@@ -1,5 +1,6 @@
 import { Container } from "./styled";
 import { useState } from "react";
+import Produto from "../produto";
 
 export default function Home() {
     const [produtos, setProdutos] = useState([]);
@@ -45,7 +46,7 @@ export default function Home() {
 
             <div className= "lista-produtos">
                 {produtos.map(item =>
-                    <produtos info={item}/>
+                    <Produto info={item}/>
                 )}
             </div>
         </Container>
