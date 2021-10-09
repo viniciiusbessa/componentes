@@ -46,9 +46,9 @@ export default function Contador(props) {
     useEffect(() => {
         props.onChange(qtd);
     }, [qtd]) 
-}
 
-return (
+
+ return (
     <Container>
         <div className="menos" onClick={decrementar}>
          -
@@ -64,3 +64,5 @@ return (
         
     </Container>
 )
+
+}

@@ -45,7 +45,7 @@ export default function Home() {
 
             <div className= "lista-produtos">
                 {produtos.map(item =>
-                    <Produto info={item}/>
+                    <produtos info={item}/>
                 )}
             </div>
         </Container>
